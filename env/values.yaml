@@ -5,12 +5,7 @@ cleanup:
     helm.sh/hook-delete-policy: hook-succeeded
   Args:
   - --cleanup
-<<<<<<< HEAD
-controllerbuild:
-  enabled: true
-=======
 controllerbuild: {}
->>>>>>> bd176cec758b5701d4981e285465ab8a4e8b4f86
 expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
@@ -19,11 +14,7 @@ expose:
   - --v
   - 4
   config:
-<<<<<<< HEAD
-    domain: 104.196.109.248.nip.io
-=======
-    domain: 35.237.198.97.nip.io
->>>>>>> bd176cec758b5701d4981e285465ab8a4e8b4f86
+    domain: 34.74.193.252.nip.io
     exposer: Ingress
     http: "true"
 jenkins:
@@ -31,8 +22,4 @@ jenkins:
     Global:
       EnvVars:
         TILLER_NAMESPACE: kube-system
-<<<<<<< HEAD
-  enabled: false
-=======
->>>>>>> bd176cec758b5701d4981e285465ab8a4e8b4f86
 prow: {}
